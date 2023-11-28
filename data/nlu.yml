@@ -1,0 +1,586 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: Computer_Science_Courses
+  examples : |
+    - C++ Programming
+    - Python Programming
+    - Java Programming
+    - HTML / CSS
+    - Java Script
+    - Web Development
+    - Android Development
+    - Artificial Intelligence
+    - Deep Learning
+    - Machine Learning
+    - Data Science
+    - Operating System
+    - Networking
+    - Cyber Security
+    - Blockchain
+
+- intent: solve_math_problem
+  examples : |
+    - Can you solve x^2 + 3x + 2 = 0?
+    - What is the integral of sin(x) dx?
+    - Solve for y: 2y + 5 = 13
+    - Calculate the derivative of x^3 + 2x^2 - 5x + 7
+    - Find the value of sqrt(25)
+    - What is the result of 4 factorial?
+    - Evaluate: log(100)
+    - Solve: 3x - 7 = 14
+    - 2 + 2 = ?
+
+- intent: ask_question
+  examples: |
+    - What is the population of Australia?
+    - How far is the moon from Earth?
+    - Who is the president of France?
+    - What is the boiling point of water?
+    - How tall is the Eiffel Tower?
+    - What is the capital of Japan?
+    - How many teaspoons in a cup?
+    - What is the speed of light?
+    - Who painted the Mona Lisa?
+    - What is the currency of Brazil?
+    - How many planets are in the solar system?
+    - What is the largest mammal?
+    - What is the chemical symbol for gold?
+    - Who wrote the book "1984"?
+    - What year did World War II end?
+    - What is the pH of lemon juice?
+    - What is the main ingredient in guacamole?
+    - How many sides does a hexagon have?
+    - What is the prime factorization of 36?
+    - Who discovered penicillin?
+    - What is the boiling point of ethanol?
+    - What is the formula for the area of a circle?
+    - How long is the Nile River?
+    - What is the current time in London?
+    - What is the atomic number of oxygen?
+    - How many players are there in a soccer team?
+    - What is the tallest mountain in the world?
+    - Who is the author of "To Kill a Mockingbird"?
+    - What is the chemical formula for water?
+    - What is the melting point of ice?
+    - How many bones are in the human body?
+    - Who discovered gravity?
+    - What is the national animal of Canada?
+    - What is the largest continent?
+    - What is the capital of Russia?
+    - How many centimeters in an inch?
+    - What is the square root of 64?
+    - What is the boiling point of mercury?
+    - What is the speed of sound in air?
+    - Who painted the Sistine Chapel ceiling?
+    - What is the currency of India?
+    - How many degrees are in a right angle?
+    - What is the population of China?
+    - What is the freezing point of water?
+    - What is the chemical symbol for sodium?
+    - What is the capital of South Africa?
+    - How many millimeters in a meter?
+    - What is the most spoken language in the world?
+    - What is the atomic weight of carbon?
+    - How many years are in a century?
+    - Who composed the opera "The Magic Flute"?
+    - What is the largest ocean?
+    - What is the circumference of the Earth?
+    - What is the chemical formula for table salt?
+    - How many inches in a foot?
+    - What is the melting point of iron?
+    - What is the national flower of Japan?
+    - Who founded Microsoft?
+    - What is the capital of Italy?
+    - What is the boiling point of nitrogen?
+    - What is the largest desert in the world?
+    - What is the chemical symbol for potassium?
+    - How many teeth do adult humans have?
+    - What is the currency of Japan?
+    - What is the highest mountain in Africa?
+    - What is the speed of a cheetah?
+    - Who invented the telephone?
+    - What is the pH of vinegar?
+    - What is the formula for kinetic energy?
+    - How many ounces in a pound?
+    - What is the largest river in the world?
+    - Who is the first woman to win a Nobel Prize?
+    - What is the national bird of the United States?
+    - What is the main ingredient in chocolate?
+    - What is the chemical formula for oxygen?
+    - How many liters in a gallon?
+    - What is the boiling point of carbon dioxide?
+    - What is the largest mammal in the world?
+    - Who is the founder of Amazon?
+    - What is the national sport of Japan?
+    - What is the atomic number of helium?
+    - What is the capital of Spain?
+    - What is the speed of a bullet train?
+    - Who discovered America?
+    - What is the chemical formula for methane?
+    - How many bones are in the human skull?
+    - What is the currency of the United Kingdom?
+    - What is the circumference of the Moon?
+    - What is the boiling point of aluminum?
+    - What is the formula for density?
+    - How many players are on a basketball team?
+    - What is the pH of pure water?
+    - Who wrote "Pride and Prejudice"?
+    - What is the currency of Australia?
+    - What is the largest island in the world?
+    - What is the melting point of gold?
+    - What is the chemical symbol for iron?
+    - How many planets are closer to the Sun than Earth?
+    - What is the national flower of France?
+    - What is the capital of Brazil?
+    - What is the atomic weight of hydrogen?
+    - What is the boiling point of oxygen?
+    - Who is the director of "Inception"?
+    - What is the currency of Canada?
+    - What is the speed of light in a vacuum?
+    - What is the national animal of Australia?
+    - What is the main ingredient in sushi?
+    - How many sides does a square have?
+    - What is the pH of tomato juice?
+    - What is the boiling point of copper?
+    - Who painted "Starry Night"?
+    - What is the currency of China?
+    - What is the capital of India?
+    - What is the speed of a cheetah in mph?
+    - What is the diameter of the Sun?
+    - Who discovered penicillin?
+    - What is the chemical formula for glucose?
+    - How many teeth do children lose?
+    - What is the currency of Russia?
+    - What is the largest lake in the world?
+    - What is the boiling point of silver?
+    - What is the pH of orange juice?
+    - Who wrote "The Great Gatsby"?
+    - What is the capital of Mexico?
+    - What is the atomic number of carbon?
+    - What is the speed of sound in water?
+    - What is the largest waterfall in the world?
+    - What is the chemical symbol for calcium?
+    - How many ribs do humans have?
+    - What is the melting point of platinum?
+    - Who is the CEO of Tesla?
+    - What is the currency of Germany?
+    - How many species of birds are there?
+    - What is the chemical formula for carbon dioxide?
+    - What is the speed of the fastest animal on Earth?
+    - Who directed the movie "The Shawshank Redemption"?
+    - What is the boiling point of sulfur?
+    - What is the national animal of India?
+    - How many grams in a kilogram?
+    - What is the pH of battery acid?
+    - What is the largest carnivorous mammal?
+    - Who was the first person to step on the Moon?
+    - What is the atomic weight of nitrogen?
+    - What is the capital of Canada?
+    - What is the speed of the fastest car in the world?
+    - What is the largest vegetable by weight?
+    - What is the chemical symbol for silver?
+    - How many chambers are there in the human heart?
+    - What is the currency of France?
+    - What is the boiling point of helium?
+    - What is the national flower of England?
+    - Who discovered electricity?
+    - What is the pH of milk?
+    - What is the capital of Australia?
+    - What is the speed of a commercial jet?
+    - Who wrote the play "Romeo and Juliet"?
+    - What is the currency of Mexico?
+    - What is the atomic number of potassium?
+    - What is the boiling point of neon?
+    - What is the national bird of Canada?
+    - Who invented the light bulb?
+    - What is the pH of bleach?
+    - What is the capital of China?
+    - What is the speed of the fastest bird?
+    - Who wrote "The Catcher in the Rye"?
+    - What is the currency of Japan?
+    - What is the atomic weight of oxygen?
+    - What is the boiling point of xenon?
+    - What is the national flower of Japan?
+    - Who is the current CEO of Apple?
+    - What is the pH of saliva?
+    - What is the capital of South Korea?
+    - What is the speed of a commercial airliner?
+    - Who wrote the play "Hamlet"?
+    - What is the currency of Spain?
+    - What is the atomic number of sodium?
+    - What is the boiling point of argon?
+    - What is the national animal of the United States?
+    - How fast is a lightning bolt?
+    - Who discovered the theory of relativity?
+    - What is the pH of human blood?
+    - What is the capital of Germany?
+    - What is the speed of a commercial airplane during takeoff?
+    - Who wrote "The Odyssey"?
+    - What is the currency of Italy?
+    - What is the atomic weight of helium?
+    - What is the boiling point of krypton?
+    - What is the national flower of India?
+    - Who is the current CEO of Microsoft?
+    - What is the pH of black coffee?
+    - What is the capital of Russia?
+    - What is the speed of the fastest fish?
+    - Who wrote "The Lord of the Rings"?
+    - What is the currency of Brazil?
+    - What is the atomic number of iron?
+    - What is the boiling point of radon?
+    - What is the national bird of Australia?
+    - Who discovered the theory of gravity?
+    - What is the pH of stomach acid?
+    - What is the capital of France?
+    - What is the speed of a sneeze?
+    - Who wrote "Moby-Dick"?
+    - What is the currency of Canada?
+    - What is the atomic weight of carbon?
+    - What is the boiling point of francium?
+    - What is the national flower of France?
+    - Who is the current CEO of Google?
+    - What is the pH of lemon juice?
+    - What is the capital of Japan?
+    - What is the speed of a falling raindrop?
+    - Who wrote "The Great Gatsby"?
+    - What is the currency of India?
+    - What is the atomic number of hydrogen?
+    - What is the boiling point of radium?
+    - What is the national bird of China?
+    - Who discovered the laws of motion?
+    - What is the pH of vinegar?
+    - What is the capital of the United Kingdom?
+    - What is the speed of a falling object?
+    - Who wrote "The Adventures of Sherlock Holmes"?
+    - What is the currency of South Africa?
+    - What is the atomic weight of gold?
+    - What is the boiling point of cesium?
+    - What is the national flower of China?
+    - Who is the current CEO of Facebook?
+    - What is the pH of pure water?
+    - What is the capital of Spain?
+    - What is the speed of a thunderstorm?
+    - Who wrote "The Canterbury Tales"?
+    - What is the currency of Australia?
+    - What is the atomic number of oxygen?
+    - What is the boiling point of uranium?
+    - What is the national bird of England?
+    - Who discovered the laws of thermodynamics?
+    - What is the pH of rainwater?
+    - What is the capital of Italy?
+    - What is the speed of a falling leaf?
+    - Who wrote "Alice's Adventures in Wonderland"?
+    - What is the currency of Japan?
+    - What is the atomic weight of nitrogen?
+    - What is the boiling point of plutonium?
+    - What is the national flower of the United States?
+    - Who is the current CEO of Amazon?
+    - What is the pH of bleach?
+    - What is the capital of India?
+    - What is the speed of a falling snowflake?
+    - Who wrote "Don Quixote"?
+    - What is the currency of Mexico?
+    - What is the atomic number of carbon?
+    - What is the boiling point of cobalt?
+    - What is the national bird of Japan?
+    - Who discovered the laws of genetics?
+    - What is the pH of sea water?
+    - What is the capital of Germany?
+    - What is the speed of a falling meteor?
+    - Who wrote "War and Peace"?
+    - What is the currency of Spain?
+    - What is the atomic weight of hydrogen?
+    - What is the boiling point of nitrogen?
+    - What is the national flower of Japan?
+    - Who is the current CEO of Apple?
+    - What is the pH of milk?
+    - What is the capital of France?
+    - What is the speed of a falling feather?
+    - Who wrote "The Divine Comedy"?
+    - What is the currency of Italy?
+    - What is the atomic number of sodium?
+    - What is the boiling point of oxygen?
+    - What is the national animal of India?
+    - How fast is a jet plane?
+    - Who discovered the laws of motion?
+    - What is the pH of pure water?
+    - What is the capital of the United Kingdom?
+    - What is the speed of light in a vacuum?
+    - Who wrote "The Adventures of Sherlock Holmes"?
+    - What is the currency of Australia?
+    - What is the atomic weight of gold?
+    - What is the boiling point of cesium?
+    - What is the national flower of China?
+    - Who is the current CEO of Facebook?
+    - What is the pH of rainwater?
+    - What is the capital of Spain?
+    - What is the speed of a thunderstorm?
+    - Who wrote "The Canterbury Tales"?
+    - What is the currency of Japan?
+    - What is the atomic number of oxygen?
+    - What is the boiling point of uranium?
+    - What is the national bird of England?
+    - Who discovered the laws of thermodynamics?
+    - What is the pH of bleach?
+    - What is the capital of India?
+    - What is the speed of a falling snowflake?
+    - Who wrote "Alice's Adventures in Wonderland"?
+    - What is the currency of Mexico?
+    - What is the atomic weight of nitrogen?
+    - What is the boiling point of plutonium?
+    - What is the national flower of the United States?
+    - Who is the current CEO of Amazon?
+    - What is the pH of sea water?
+    - What is the capital of Germany?
+    - What is the speed of a falling meteor?
+    - Who wrote "Don Quixote"?
+    - What is the currency of Spain?
+    - What is the atomic number of carbon?
+    - What is the boiling point of cobalt?
+    - What is the national bird of Japan?
+    - Who discovered the laws of genetics?
+    - What is the pH of milk?
+    - What is the capital of France?
+    - What is the speed of a falling feather?
+    - Who wrote "The Divine Comedy"?
+    - What is the currency of Italy?
+    - What is the atomic weight of hydrogen?
+    - What is the boiling point of nitrogen?
+    - What is the national animal of India?
+    - How fast is a jet plane?
+    - Who discovered the laws of motion?
+    - What is the pH of pure water?
+    - What is the capital of the United Kingdom?
+    - What is the speed of light in a vacuum?
+    - Who wrote "The Adventures of Sherlock Holmes"?
+    - What is the currency of Australia?
+    - What is the atomic weight of gold?
+    - What is the boiling point of cesium?
+    - What is the national flower of China?
+    - Who is the current CEO of Facebook?
+    - What is the pH of rainwater?
+    - What is the capital of Spain?
+    - What is the speed of a thunderstorm?
+    - Who wrote "The Canterbury Tales"?
+    - What is the currency of Japan?
+    - What is the atomic number of oxygen?
+    - What is the boiling point of uranium?
+    - What is the national bird of England?
+    - Who discovered the laws of thermodynamics?
+    - What is the pH of bleach?
+    - What is the capital of India?
+    - What is the speed of a falling snowflake?
+    - Who wrote "Alice's Adventures in Wonderland"?
+    - What is the currency of Mexico?
+    - What is the atomic weight of nitrogen?
+    - What is the boiling point of plutonium?
+    - What is the national flower of the United States?
+    - Who is the current CEO of Amazon?
+    - What is the pH of sea water?
+    - What is the capital of Germany?
+    - What is the speed of a falling meteor?
+    - Who wrote "Don Quixote"?
+    - What is the currency of Spain?
+    - What is the atomic number of carbon?
+    - What is the boiling point of cobalt?
+    - What is the national bird of Japan?
+    - Who discovered the laws of genetics?
+    - What is the pH of milk?
+    - What is the capital of France?
+    - What is the speed of a falling feather?
+    - Who wrote "The Divine Comedy"?
+    - What is the currency of Italy?
+    - What is the atomic weight of hydrogen?
+    - What is the boiling point of nitrogen?
+    - What is the national animal of India?
+    - How fast is a jet plane?
+    - Who discovered the laws of motion?
+    - What is the pH of pure water?
+    - What is the capital of the United Kingdom?
+    - What is the speed of light in a vacuum?
+    - Who wrote "The Adventures of Sherlock Holmes"?
+    - What is the currency of Australia?
+    - What is the atomic weight of gold?
+    - What is the boiling point of cesium?
+    - What is the national flower of China?
+    - Who is the current CEO of Facebook?
+    - What is the pH of rainwater?
+    - What is the capital of Spain?
+    - What is the speed of a thunderstorm?
+    - Who wrote "The Canterbury Tales"?
+    - What is the currency of Japan?
+    - What is the atomic number of oxygen?
+    - What is the boiling point of uranium?
+    - What is the national bird of England?
+    - Who discovered the laws of thermodynamics?
+
+
+- intent: find_resources
+  examples: |
+    - Can you provide resources on [machine learning](topic)?
+    - I need resources about [Python programming](topic).
+    - Do you have any materials on [psychology](topic)?
+    - Where can I find resources for [learning web development](topic)?
+    - Are there any good [books on astronomy](topic)?
+    - Can you recommend resources for improving my [public speaking skills](topic)?
+    - I'm looking for resources related to [artificial intelligence](topic).
+    - Do you have any articles about [blockchain technology](topic)?
+    - Where can I find resources to learn [data analysis](topic)?
+    - Could you suggest some resources on [organic chemistry](topic)?
+    - Any good websites for learning [mathematics](topic)?
+    - Can you recommend any resources for understanding [quantum physics](topic)?
+    - I'm interested in [ecology](topic). Where can I find good resources?
+    - Any online courses for learning [graphic design](topic)?
+    - Can you point me to resources about [ancient history](topic)?
+    - Where should I look for resources on [machine vision](topic)?
+    - Do you have any resources on [environmental sustainability](topic)?
+    - What are some good resources for learning [programming languages](topic)?
+    - Could you suggest resources for improving my [writing skills](topic)?
+    - I'm looking for resources on [financial planning](topic). Any recommendations?
+    - Where can I find reliable resources for [biology](topic)?
+    - Do you know any resources for learning [game development](topic)?
+    - Can you provide resources on [cybersecurity](topic)?
+    - I'm interested in [robotics](topic). Any recommended resources?
+    - Where can I find resources on [renewable energy](topic)?
+    - Any [podcasts or videos](format) about [entrepreneurship](topic)?
+    - Could you suggest resources for learning [graphic design tools](topic)?
+
+- intent: ask_for_news
+  examples: |
+    - Can you show me the latest [technology](category) news?
+    - I want to know about the [business](category) news.
+    - Show me the [entertainment](category) news.
+    - Any updates on [sports](category) news?
+    - What's happening in [health](category) news?
+    - Give me the [science](category) news headlines.
+    - I'm interested in [politics](category) news. Any updates?
+    - What's the latest in [technology](category) news?
+    - Can you update me on [business](category) news?
+    - Show me [entertainment](category) news updates.
+    - Any fresh [sports](category) news?
+    - What's the scoop in [health](category) news?
+    - Give me the latest [science](category) news headlines.
+    - I'm into [politics](category). Any recent updates?
+    - What's happening in [world](category) news?
+    - Can you provide updates on [environment](category) news?
+    - Show me [finance](category) news today.
+    - Anything new in [food](category) news?
+    - Any recent [fashion](category) news?
+    - Can you update me on [travel](category) news?
+    - Give me [education](category) news updates.
+    - Anything interesting in [art](category) news?
+    - I'm curious about [space](category) news.
+    - Show me the latest [automotive](category) news.
+    - Can you show me the latest news about [Apple](category)?
+    - I want to know about recent updates related to [Tesla](category).
+    - Show me the [Amazon](category) news.
+    - Any updates on [Google](category)?
+    - What's happening with [Microsoft](category) lately?
+    - Give me the latest news about [SpaceX](category).
+    - Show me [Netflix](category) news updates.
+    - Any fresh developments from [Facebook](category)?
+    - Can you provide updates on [Elon Musk](category) news?
+    - What's new in [Electric Vehicles](category) news?
+    - Show me the latest [Artificial Intelligence](category) news.
+    - I want to know about recent developments in [Blockchain](category).
+    - Any updates on [Cryptocurrency](category) news?
+    - What's happening in the [Gaming Industry](category) news?
+    - Can you provide updates on [Renewable Energy](category) news?
+    - Give me [Space Exploration](category) news updates.
+    - Anything interesting in [Medical Technology](category) news?
+    - I'm curious about [Climate Change](category) news.
+    - Show me the latest [Cybersecurity](category) news.
+    - Can you provide updates on [E-commerce](category) news?
+    - Give me [Fashion Industry](category) news updates.
+    - Anything new in [Robotics](category) news?
+    - I'm interested in [Biotechnology](category) news. Any recent updates?
+    - Show me the latest [Aviation](category) news.
+    - What's happening in [Automotive Innovation](category) news?
+    - Can you provide updates on [Food Tech](category) news?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: get_weather_location
+  examples: |
+    - What's the weather like in [New York](location) today?
+    - Can you tell me the weather forecast for [London](location)?
+    - Show me the weather in [Tokyo](location).
+    - Any updates on the weather in [Sydney](location)?
+    - What's the temperature in [Paris](location) right now?
+    - Tell me about the weather conditions in [Berlin](location).
+    - How's the weather in [Los Angeles](location) currently?
+    - Provide me with the weather report for [Rome](location).
+    - Show the weather for [Madrid](location).
+    - What's the forecast for [Beijing](location)?
+    - What's the weather like in [San Francisco](location) right now?
+    - Can you tell me the weather forecast for [Chicago](location) today?
+    - Show me the weather in [Miami](location).
+    - Any updates on the weather in [Seattle](location)?
+    - What's the temperature in [Denver](location) at the moment?
+    - Tell me about the weather conditions in [Austin](location).
+    - How's the weather in [Houston](location) currently?
+    - Provide me with the weather report for [Boston](location).
+    - Show the weather for [Atlanta](location).
+    - What's the forecast for [Dallas](location)?
+    - Give me the weather in [Las Vegas](location).
+    - Any updates on the weather in [Portland](location)?
+    - What's the temperature in [Phoenix](location) right now?
+    - Can you tell me the weather forecast for [San Diego](location)?
+    - Show me the weather in [New Orleans](location).
+    - Any updates on the weather in [Orlando](location)?
+    - What's the weather like in [San Antonio](location) today?
+    - Can you tell me the weather forecast for [New York City](location)?
+    - Show me the weather in [Los Angeles County](location).
+    - Any updates on the weather in [Mexico City](location)?
+    - What's the temperature in [Rio de Janeiro](location) right now?
+    - Tell me about the weather conditions in [São Paulo](location).
+    - How's the weather in [San Francisco Bay Area](location) currently?
+    - Provide me with the weather report for [Buenos Aires](location).
+    - Show the weather for [Washington D.C.](location).
+    - What's the forecast for [Santa Fe](location)?
+    - Give me the weather in [Salt Lake City](location).
+    - Any updates on the weather in [San Jose](location)?
+    - What's the temperature in [Santiago de Chile](location) right now?
+    - Can you tell me the weather forecast for [Las Vegas Strip](location)?
+    - Show me the weather in [Kansas City](location).
+    - Any updates on the weather in [San Diego County](location)?
+
+- lookup: location
+  examples: |
+    ./cities.txt
+

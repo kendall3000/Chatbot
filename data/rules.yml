@@ -1,0 +1,38 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Solve a math problem provided by user
+  steps:
+  - intent: solve_math_problem
+  - action: solve_wolfram
+
+- rule: get the weather when asked
+  steps:
+  - intent: get_weather_location
+  - action: get_weather
+
+- rule: get the news on a specific category
+  steps:
+  - intent: ask_for_news
+  - action: get_news
+
+- rule: provide resources when a user asks
+  steps:
+  - intent: find_resources
+  - action: get_wiki
+
+- rule: answer a question
+  steps:
+  - intent: ask_question
+  - action: solve_wolfram
